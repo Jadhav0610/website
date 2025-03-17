@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(0, 0, 0);
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    
+}
+header h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.main-nav {
+    list-style:none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: white;
+    padding: 10px 20px;
+}
+p{
+    margin-bottom: 50px;
+    color: white;
+    padding: 10px 20px;
+    font-style:italic ;
+}  
+
+
+.main-nav li {
+    margin-left:20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+.side-bar{
+    position: relative;
+}
+.side-icon{
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+   
+}
+.side-menu{
+    font-style: italic;
+    display: none;
+    position: absolute;
+    top:60px;
+    left:0;
+    background-color: #333;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    border: 1px solid #444;
+}
+.side-menu li{
+    padding: 10px;
+    border-bottom:1px solid #444;
+}
+.side-menu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.side-menu li a:hover{
+    background-color: rgb(255, 255, 255);
+}
+#menu-toggle{
+    display: none;
+}
+#menu-toggle:checked ~ .side-menu{
+    display: block;
+}
+
+.movie-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-right: 42rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.movie-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}   
+  
+.movie-item:last-child {
+    border-bottom: none;
+}
+  
+.rank {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+  
+.movie-poster {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+  
+.details {
+
+    flex-grow: 1;
+    margin-left: 10px;
+    display: inline-block;
+}
+  
+.title {
+    display:inline-flex;
+    font-weight: bold;
+    color: #ffe8e8;
+}
+  
+.year {
+    margin-left: 1px;
+    color: #fff0f0;
+    display: grid;
+}
+  
+.rating {
+    font-size: small;
+    color: #fdfdfd;
+}
